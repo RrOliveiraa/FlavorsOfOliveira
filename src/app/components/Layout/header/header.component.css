@@ -1,0 +1,11 @@
+.navbar {
+    display: block;
+  }
+  .navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  }
+  .navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 24px;
+    color: hsl(129, 60%, 71%);
+  }
