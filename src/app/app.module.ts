@@ -10,7 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/Layout/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-
+import { RouterModule } from '@angular/router';
+import { RecipeComponent } from './components/recipe/recipe.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -19,7 +20,8 @@ import { RegisterComponent } from './components/register/register.component';
         MainComponent,
         FooterComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        RecipeComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -28,6 +30,7 @@ import { RegisterComponent } from './components/register/register.component';
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
+        RouterModule
         
     ]
 })

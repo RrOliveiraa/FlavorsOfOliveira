@@ -9,3 +9,16 @@
     font-size: 24px;
     color: hsl(129, 60%, 71%);
   }
+
+  a.navbar-brand {
+    color: #19964d; /* Altere para a cor desejada */
+  }
+ 
+  .nav-link-green {
+    color: rgb(9, 194, 9) !important; /* Define a cor do texto como verde */
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+  }
+
+  .nav-link-green:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do link ao passar o mouse sobre ele */
+  }

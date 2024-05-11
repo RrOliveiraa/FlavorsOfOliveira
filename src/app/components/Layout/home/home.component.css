@@ -1,37 +1,10 @@
 
-.column-container {
-    display: block;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 8rem; /* adiciona um espaço em cima da coluna */
-    padding: 0 3rem; /* adiciona um preenchimento à esquerda e à direita da coluna */
-
-  }
-  
-  .column {
-    flex: 1;
-    margin-right: 10rem;
-    margin-bottom: 1rem;
-    max-width: 57%;
-  }
-  
-  .handwriting-text {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-family: 'Pacifico', cursive;
-    text-align: justify;
-  }
-  .text-and-buttons-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .buttons-container {
-    display: flex;
-    justify-content: left;
-    margin-left: 10rem;
-    margin-top: 30px; /* adjust the margin-top value as needed */
-  }
-  .button-spaced {
-    margin-right: 50px;
-  }
+.buttons-container {
+  display: flex;
+  justify-content: left;
+  margin-left: 25rem;
+  margin-top: 60px; /* adjust the margin-top value as needed */
+}
+.button-spaced {
+  margin-right: 50px;
+}
