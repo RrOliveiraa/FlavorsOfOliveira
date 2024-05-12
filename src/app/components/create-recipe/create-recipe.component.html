@@ -1,0 +1,59 @@
+<main class="container-main">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="text-center mb-4">Criar Receita</h1>
+            <form class="formulario" (ngSubmit)="createRecipe()" [formGroup]="recipeForm">
+                <div class="form-group">
+                    <label for="nome">Título da Receita</label>
+                    <input type="text" class="form-control" id="nome" formControlName="nome">
+                    <small class="form-text text-muted">Campo obrigatório</small>
+                </div>
+  
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="tempo_de_preparo">Tempo de Preparo</label>
+                        <input type="text" class="form-control" id="tempo_de_preparo" formControlName="tempo_de_preparo">
+                        <small class="form-text text-muted">Exemplo: 1h e 30min - Campo obrigatório</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="avaliacao">Dificuldade da Receita</label>
+                        <input type="text" class="form-control" id="avaliacao" formControlName="avaliacao">
+                        <small class="form-text text-muted">Exemplo: 7/10 - Campo obrigatório</small>
+                    </div>
+                </div>
+  
+                <h5>Ingredientes</h5>
+  
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="categoria1">Nome</label>
+                        <input type="text" class="form-control" id="categoria1" formControlName="categoria1">
+                        <small class="form-text text-muted">Campo obrigatório - ex: "Açucar", etc</small>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="categoria2">Quantidade</label>
+                        <input type="text" class="form-control" id="categoria2" formControlName="categoria2">
+                        <small class="form-text text-muted">Campo obrigatório - ex: "0,5", "3", etc</small>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="categoria3">Unidade</label>
+                        <input type="text" class="form-control" id="categoria3" formControlName="categoria3">
+                        <small class="form-text text-muted">Campo obrigatório - ex: "Gr", "kg", etc</small>
+                    </div>
+                </div>
+  
+                <h5>Modo de Preparo</h5>
+  
+                <div class="form-group">
+                    <label for="itens">Descrição</label>
+                    <textarea class="form-control" id="itens" rows="6" formControlName="itens"></textarea>
+                    <small class="form-text text-muted">Campo obrigatório</small>
+                </div>
+  
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </main>

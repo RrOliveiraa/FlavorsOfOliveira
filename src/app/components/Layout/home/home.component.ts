@@ -29,5 +29,13 @@ export class HomeComponent {
 
   }
 
+goToRecipePage(){
+
+  this.router.navigate(['/recipe']);
+
+  this.showContent = false;
+
+
+}
 
 }
