@@ -14,4 +14,5 @@ export class RecipeComponent {
     // Redireciona para a página Create Recipe
     this.router.navigate(['/create-recipe']);
   }
+  
 }

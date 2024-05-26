@@ -1,1 +1,28 @@
-<p>admin works!</p>
+<div class="container">
+    <h1>Painel de Administração</h1>
+    <!-- Mensagens de erro e sucesso -->
+    <div *ngIf="message" class="alert alert-success">{{ message }}</div>
+    <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+  
+    <!-- Tabela -->
+    <table class="table table-bordered" *ngIf="users.length > 0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteUser(user.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

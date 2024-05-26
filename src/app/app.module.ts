@@ -6,13 +6,17 @@ import { HomeComponent } from './components/Layout/home/home.component';
 import { HeaderComponent } from './components/Layout/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/Layout/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { RouterModule } from '@angular/router';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import { CreateRecipeComponent } from './components/create-recipe/create-recipe.component';
+import { RecipesListComponent } from './components/recipeslist/recipeslist.component';
+import { MyAccountComponent } from './components/myaccount/myaccount.component';
+import { AdminComponent } from './components/admin/admin.component';
+
 
 
 
@@ -27,6 +31,9 @@ import { CreateRecipeComponent } from './components/create-recipe/create-recipe.
         RegisterComponent,
         RecipeComponent,
         CreateRecipeComponent,
+        RecipesListComponent,
+        MyAccountComponent,
+        AdminComponent,
 
     ],
     providers: [],
@@ -36,6 +43,7 @@ import { CreateRecipeComponent } from './components/create-recipe/create-recipe.
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
+        FormsModule,
         RouterModule
         
     ]

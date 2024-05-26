@@ -1,16 +1,12 @@
 <app-header></app-header>
-
-<div *ngIf="showContent">
-<app-main></app-main>
+<router-outlet></router-outlet>
 
 
 
-<div class="buttons-container">
-  <button button (click) = "goToRegisterPage()" type="button" class="btn btn-outline-primary button-spaced">Sign Up</button>
-  <button button (click) = "goToLoginPage()" type="button" class="btn btn-outline-success">Login</button>
-  
-  
-</div>
+
+
+
+
 
 
 

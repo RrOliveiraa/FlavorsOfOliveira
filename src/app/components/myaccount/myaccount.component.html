@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Minha Conta</h1>
+  <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+  <div *ngIf="!error && userInfo">
+    <p><strong>Nome:</strong> {{ userInfo.Name }}</p>
+    <p><strong>Email:</strong> {{ userInfo.Email }}</p>
+    <p><strong>Nome de Usuário:</strong> {{ userInfo.Username }}</p>
+    <p><strong>Receitas Favoritas:</strong></p>
+    <ul>
+      <li *ngFor="let recipe of userInfo.FavoriteRecipes">{{ recipe }}</li>
+    </ul>
+  </div>
+</div>

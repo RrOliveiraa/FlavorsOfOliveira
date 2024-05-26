@@ -1,9 +1,7 @@
 export interface Register {
     Id: Number;
+    Name: string;
     Username: string;
-    Tittle: string;
-    Description: string;
-    Difficulty: string;
-    Duration: string;
-    Ingredients: string;
+    Email: string;
+    Password: string;
 }

@@ -1,0 +1,40 @@
+.container {
+    margin-top: 60px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .list-group-item:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .list-group-item:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  
+  .ingredient {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ingredient-inputs {
+    display: flex;
+    flex-direction: column;
+  }

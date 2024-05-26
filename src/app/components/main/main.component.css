@@ -25,4 +25,12 @@
     flex-direction: column;
   }
   
-  
+  .buttons-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 25rem;
+    margin-top: 60px; /* adjust the margin-top value as needed */
+  }
+  .button-spaced {
+    margin-right: 50px;
+  }
